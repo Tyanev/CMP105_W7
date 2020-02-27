@@ -23,11 +23,15 @@ void Player::handleInput(float dt)
 
 	if (input->isKeyDown(sf::Keyboard::Enter))
 	{
-		bullet->setPosition(getPosition() + sf::Vector2f(getSize().x / 2, getSize().y /2));
+		bullet.setPosition(getPosition() + sf::Vector2f(getSize().x / 2, getSize().y /2));
+		bullet1.setPosition(getPosition() + sf::Vector2f(getSize().x / 2, getSize().y / 2 + 20));
+		bullet2.setPosition(getPosition() + sf::Vector2f(getSize().x / 2, getSize().y / 2 - 20));
 	}
 }
 
 void Player::update(float dt) 
 {
-	bullet->update(dt);
+	bullet.update(dt);
+	bullet1.update(dt);
+	bullet2.update(dt);
 }

@@ -5,6 +5,8 @@
 
 class Player : public GameObject
 {
+private:
+		Bullet bullet;
 public:
 	Player();
 	~Player();
@@ -13,7 +15,4 @@ public:
 	Bullet* getBullet() {
 		return &bullet;
 	};
-
-private
-	Bullet bullet;
 };

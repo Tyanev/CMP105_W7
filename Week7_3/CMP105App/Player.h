@@ -5,6 +5,11 @@
 
 class Player : public GameObject
 {
+private:
+	Bullet bullet;
+	Bullet bullet1;
+	Bullet bullet2;
+
 public:
 	Player();
 	~Player();
@@ -12,9 +17,13 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 	Bullet* getBullet() {
-		return bullet;
+		return &bullet;
+	};
+	Bullet* getBullet1() {
+		return &bullet1;
+	};
+	Bullet* getBullet2() {
+		return &bullet2;
 	};
 
-private:
-	Bullet* bullet;
 };

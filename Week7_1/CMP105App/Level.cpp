@@ -6,6 +6,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
+
 	player.setInput(input);
 }
 

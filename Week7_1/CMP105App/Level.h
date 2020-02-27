@@ -7,6 +7,7 @@
 #include "Player.h"
 
 
+
 class Level{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);

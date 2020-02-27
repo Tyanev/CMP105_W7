@@ -32,6 +32,8 @@ void Level::render()
 	beginDraw();
 	window->draw(player);
 	window->draw(*player.getBullet());
+	window->draw(*player.getBullet1());
+	window->draw(*player.getBullet2());
 	endDraw();
 }
 

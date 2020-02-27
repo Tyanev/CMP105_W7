@@ -3,7 +3,8 @@
 #include "Framework/GameObject.h"
 #include "Player.h"
 
-class Enemy : public GameObject
+class Enemy :
+	public GameObject
 {
 public:
 	Enemy();
@@ -12,4 +13,4 @@ public:
 	void update(float dt);
 
 	float elapsedTime;
-}
+};
